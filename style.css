@@ -1,0 +1,127 @@
+.body {
+    background-image: url(./image/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+/*HEADER*/
+.header {
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.295);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*LOGO*/
+.logotype {
+    max-width: 100%;
+    margin-left: 20px;
+}
+/* Head Menu list */
+.head_menu_list_elements {
+    display: flex;
+    font: 20px sans-serif;
+    font-weight: 600;
+    padding: 0px;
+    margin: 0 10px;
+}
+.head_menu_list_elements :first-child {
+    margin: 0px 10px 0 0;
+}
+.list_elements {
+    color: white;
+    margin: 0 10px;
+    transition: color .5s ease-in-out;
+}
+.link_decoration {
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+}
+.style_text {
+    list-style: none;
+}
+.list_elements :hover {
+    color: blanchedalmond;
+
+}
+/*USER BOTTON*/
+.user_botton_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 0px;
+    margin: 0px 10px;
+}
+.user_botton_element{
+    text-align: center;
+    margin-left: 10px;
+}
+.user_botton_element:first-child{
+    margin: 0px;
+}
+/*Animator rigth up*/
+.button_ent {
+    font-size: 20px;
+    border: white 1px solid;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+.button_ent:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.youtube {
+    padding: 0px;
+    margin: 0px;
+}
+
+  nav a {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    transition: .4s ease-in-out;
+  }
+  .topmenu > li {
+    display: inline-block;
+    position: relative;
+  }
+  .topmenu > li > a {
+    padding: 0 30px;
+    margin: 5px 0px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  }
+  .topmenu li a:hover { 
+      color: olive; 
+    }
+  .submenu {
+    position: absolute;
+    visibility: hidden;
+    list-style: none;
+    opacity: 0;
+    z-index: 5;
+    width: 10px;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+  }
+  .topmenu > li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+  }
+  .submenu li a {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+  }
